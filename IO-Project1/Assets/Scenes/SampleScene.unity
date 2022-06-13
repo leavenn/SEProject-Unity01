@@ -149,7 +149,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324085988}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a2d27f8439d9ef24c8f60e39274f8027, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 489774503}
   - component: {fileID: 489774502}
   - component: {fileID: 489774501}
+  - component: {fileID: 489774507}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -247,8 +248,8 @@ Rigidbody:
   m_GameObject: {fileID: 489774500}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -324,12 +325,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489774500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.17, z: -5.95}
+  m_LocalPosition: {x: 0, y: 1.17, z: -5.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &489774507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489774500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d0ab0ee2d66c94b8717879ec5fe8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRb: {fileID: 489774501}
+  force: 70
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
