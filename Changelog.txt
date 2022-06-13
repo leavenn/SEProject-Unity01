@@ -1,3 +1,10 @@
 	13.06.2022
 - Project creation 
-- Ground platform added
+
+- added Ground platform 
+
+- added Player
+- added Player material
+- fixed Camera 
+- added Player physics 
+- changed background color
