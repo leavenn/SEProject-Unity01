@@ -1,3 +1,1 @@
 	13.06.2022
-- Project created.
-- Ground platform created
