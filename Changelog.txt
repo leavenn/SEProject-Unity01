@@ -10,3 +10,5 @@
 - changed background color
 
 - added main game scene - Game01
+
+-added WASD/arrows player movement
