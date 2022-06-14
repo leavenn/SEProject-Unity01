@@ -12,4 +12,13 @@ public class PlayerDetection : MonoBehaviour
             _refGameManager.GameOver();
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            _refGameManager.GameOver();
+        }
+        
+    }
 }
