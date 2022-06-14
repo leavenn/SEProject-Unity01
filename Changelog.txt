@@ -16,3 +16,4 @@
 	14.06.2022
 - added Obstacle prefab
 - added Obstacle spawn
+* fixed Obstacle spawn delay

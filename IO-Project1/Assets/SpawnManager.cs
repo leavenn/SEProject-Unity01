@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnObstacle()
     {
-        nextSpawnTime = Time.timeScale + spawnDelay;
+        nextSpawnTime = Time.time + spawnDelay;
 
         int freeSpace = Random.Range(0, 3);
         for(int i = 0; i < spawnPoints.Length; i++)
