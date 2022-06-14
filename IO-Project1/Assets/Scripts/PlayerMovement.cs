@@ -19,14 +19,14 @@ public class PlayerMovement : MonoBehaviour
             playerRb.AddForce(-force, 0, 0);
         }
 
-        if(Input.GetKey("w") || Input.GetKey("up"))
-        {
-            playerRb.AddForce(0, 0,force);
-        }
-        if(Input.GetKey("s") || Input.GetKey("down"))
-        {
-            playerRb.AddForce(0, 0, -force);
-        }
+        //if(Input.GetKey("w") || Input.GetKey("up"))
+        //{
+        //    playerRb.AddForce(0, 0,force);
+        //}
+        //if(Input.GetKey("s") || Input.GetKey("down"))
+        //{
+        //    playerRb.AddForce(0, 0, -force);
+        //}
 
         
     }
