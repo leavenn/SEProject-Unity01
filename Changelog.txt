@@ -28,3 +28,6 @@
 - added Main Menu scene
 
 - added ui score
+- added score trigger object, live score count
+
+
