@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0; 
-        Debug.Log("Trigger 1");
         Invoke("GameOverMenu", delay);
         
     }
@@ -29,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void MainMenu()
     {
-        //SceneManager.LoadScene("Game01");
+        SceneManager.LoadScene("MainMenu");
     }
 
     
