@@ -10,14 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SampleScene 1
+  m_Name: Game01
   m_EditorClassIdentifier: 
-  templateScene: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+  templateScene: {fileID: 102900000, guid: c9686ae383012b747b0bfdd3071398b6, type: 3}
   templateName: 
   description: 
   preview: {fileID: 0}
   dependencies:
+  - dependency: {fileID: 2505050013933113313, guid: 3f1d64138ed29544484be1900884d0b7, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 13400000, guid: a2d27f8439d9ef24c8f60e39274f8027, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 9e3915d253b29b54f8e859b3b4ca62b6, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: b3551da58497e9146b927a86ee5d3a37, type: 2}
     instantiationMode: 0
   templatePipeline: {fileID: 0}
   addToDefaults: 0
