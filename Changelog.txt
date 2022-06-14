@@ -17,3 +17,4 @@
 - added Obstacle prefab
 - added Obstacle spawn
 * fixed Obstacle spawn delay
+- added Obstacle movement

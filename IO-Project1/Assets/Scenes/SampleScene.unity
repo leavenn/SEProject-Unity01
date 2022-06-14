@@ -325,7 +325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489774500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.17, z: -5.95}
+  m_LocalPosition: {x: 0, y: 1.17, z: -5.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -616,7 +616,7 @@ MonoBehaviour:
   - {fileID: 700487053}
   - {fileID: 1061008326}
   obstPrefab: {fileID: 2505050013933113313, guid: 3f1d64138ed29544484be1900884d0b7, type: 3}
-  spawnDelay: 3
+  spawnDelay: 1
 --- !u!4 &1020553414
 Transform:
   m_ObjectHideFlags: 0

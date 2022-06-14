@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject obstPrefab;
 
     private float nextSpawnTime;
-    public float spawnDelay = 3f;
+    public float spawnDelay = 1f;
 
     private void Update()
     {
