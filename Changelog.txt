@@ -26,3 +26,5 @@
 
 - added Game over menu
 - added Main Menu scene
+
+- added ui score
