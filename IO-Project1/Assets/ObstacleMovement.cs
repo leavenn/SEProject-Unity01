@@ -16,5 +16,12 @@ public class ObstacleMovement : MonoBehaviour
     {
         obstRb.velocity = new Vector3(0, 0, -obstSpeed);
     }
-    
+
+    private void Update()
+    {
+        if (transform.position.z < -10f)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

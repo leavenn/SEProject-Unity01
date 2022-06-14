@@ -2,13 +2,11 @@
 - Project creation 
 
 - added Ground platform 
-
 - added Player
 - added Player material
-- fixed Camera 
+* fixed Camera 
 - added Player physics 
 - changed background color
-
 - added main game scene - Game01
 
 - added WASD/arrows player movement
@@ -18,3 +16,5 @@
 - added Obstacle spawn
 * fixed Obstacle spawn delay
 - added Obstacle movement
+- added Obstacle destruction
+
