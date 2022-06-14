@@ -23,3 +23,6 @@
 	> Player collides with obstacle
 - added Game over level restart
 * fixed light bug after scene reload
+
+- added Game over menu
+
