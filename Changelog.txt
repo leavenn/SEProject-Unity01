@@ -20,3 +20,4 @@
 
 - added Player game over detection:
 	> Player exits platform
+	> Player collides with obstacle
