@@ -11,4 +11,7 @@
 
 - added main game scene - Game01
 
--added WASD/arrows player movement
+- added WASD/arrows player movement
+
+	14.06.2022
+- added Obstacle prefab
