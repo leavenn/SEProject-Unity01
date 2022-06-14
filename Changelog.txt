@@ -21,3 +21,5 @@
 - added Player game over detection:
 	> Player exits platform
 	> Player collides with obstacle
+- added Game over level restart
+* fixed light bug after scene reload
