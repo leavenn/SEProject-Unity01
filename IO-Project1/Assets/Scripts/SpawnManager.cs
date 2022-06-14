@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject [] spawnPoints = new GameObject [4];
     public GameObject obstPrefab;
+    public GameObject scorePrefab;
 
     private float nextSpawnTime;
     public float spawnDelay = 1f;
@@ -25,7 +26,11 @@ public class SpawnManager : MonoBehaviour
         int freeSpace = Random.Range(0, 3);
         for(int i = 0; i < spawnPoints.Length; i++)
         {
-            if(i == freeSpace) { continue; }
+            if(i == freeSpace) { 
+                SpawnScorePoint(i);
+                continue;
+            }
+
             Instantiate(obstPrefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
         }
         
@@ -36,6 +41,10 @@ public class SpawnManager : MonoBehaviour
         return Time.time >= nextSpawnTime;
     }
 
+    private void SpawnScorePoint(int i)
+    {
+        Instantiate(scorePrefab, new Vector3(0,1,spawnPoints[i].transform.position.z), spawnPoints[i].transform.rotation);
+    }
 
 }
 
