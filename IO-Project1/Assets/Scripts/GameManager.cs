@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Canvas gameOverMenu;
+    public Text gameoverMenuScore;
     public float delay = 1f;
     public Text score;
 
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     public void GameOverMenu()
     {
         gameOverMenu.gameObject.SetActive(true);
+        gameoverMenuScore.text = score.text;
     } 
 
     public void Restart()
