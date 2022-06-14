@@ -18,3 +18,5 @@
 - added Obstacle movement
 - added Obstacle destruction
 
+- added Player game over detection:
+	> Player exits platform
