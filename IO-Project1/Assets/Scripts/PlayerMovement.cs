@@ -5,18 +5,22 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody playerRb;
-    public float force =  70f;
+    public float speed =  2f;
 
+    private void Start()
+    {
+        playerRb=GetComponent<Rigidbody>();
+    }
     private void FixedUpdate()
     {
-       
-        if(Input.GetKey("d") || Input.GetKey("right"))
+
+        if (Input.GetKey("d") || Input.GetKey("right"))
         {
-            playerRb.AddForce(force, 0, 0);
+            playerRb.AddForce(speed, 0, 0, ForceMode.VelocityChange);
         }
-        if(Input.GetKey("a") || Input.GetKey("left"))
+        if (Input.GetKey("a") || Input.GetKey("left"))
         {
-            playerRb.AddForce(-force, 0, 0);
+            playerRb.AddForce(-speed, 0, 0, ForceMode.VelocityChange);
         }
 
         //if(Input.GetKey("w") || Input.GetKey("up"))
@@ -28,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         //    playerRb.AddForce(0, 0, -force);
         //}
 
-        
+
     }
 
 }
