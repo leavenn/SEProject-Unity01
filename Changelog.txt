@@ -30,4 +30,6 @@
 - added ui score
 - added score trigger object, live score count
 
-
+	15.06.2022
+- added fog effect
+- added animations
