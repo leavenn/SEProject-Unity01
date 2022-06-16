@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject [] spawnPoints = new GameObject [4];
-    public GameObject obstPrefab;
+    public GameObject[] obstPrefab;
+    public Material []obstMaterials;
     public GameObject scorePrefab;
 
     private float nextSpawnTime;
@@ -30,8 +31,16 @@ public class SpawnManager : MonoBehaviour
                 SpawnScorePoint(i);
                 continue;
             }
+            int randPrefab = Random.Range(0, obstPrefab.Length);
+            int randRotation = Random.Range(-20, 20);
 
-            Instantiate(obstPrefab, spawnPoints[i].transform.position, spawnPoints[i].transform.rotation);
+            Instantiate(obstPrefab[randPrefab], spawnPoints[i].transform.position, Quaternion.Euler(new Vector3(0, randRotation, 0)));
+
+            int randMaterial = Random.Range(0, obstMaterials.Length);
+            
+            obstPrefab[randPrefab].GetComponent<MeshRenderer>().material = obstMaterials[randMaterial];
+
+
         }
         
     }
