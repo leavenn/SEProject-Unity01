@@ -7,7 +7,7 @@ public class PlayerDetection : MonoBehaviour
     public GameManager _refGameManager;
     void FixedUpdate()
     {
-        if(transform.position.y < -2f)
+        if(transform.position.y < 94f)
         {
             _refGameManager.GameOver();
         }
