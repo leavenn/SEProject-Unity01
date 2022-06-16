@@ -33,3 +33,5 @@
 	15.06.2022
 - added fog effect
 - added transition animations
+- added skybox
+- updated UI

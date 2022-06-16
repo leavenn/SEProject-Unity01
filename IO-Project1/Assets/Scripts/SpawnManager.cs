@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnScorePoint(int i)
     {
-        Instantiate(scorePrefab, new Vector3(0,1,spawnPoints[i].transform.position.z), spawnPoints[i].transform.rotation);
+        Instantiate(scorePrefab, new Vector3(0,spawnPoints[i].transform.position.y,spawnPoints[i].transform.position.z), spawnPoints[i].transform.rotation);
     }
 
 }
