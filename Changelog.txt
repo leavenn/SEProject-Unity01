@@ -36,3 +36,4 @@
 - added skybox
 - updated UI
 - changed player model
+- changed obstacle model

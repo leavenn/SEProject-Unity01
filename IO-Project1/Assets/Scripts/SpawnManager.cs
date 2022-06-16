@@ -9,6 +9,8 @@ public class SpawnManager : MonoBehaviour
     public Material []obstMaterials;
     public GameObject scorePrefab;
 
+    public int obstRotation = 10;
+
     private float nextSpawnTime;
     public float spawnDelay = 1f;
 
@@ -24,23 +26,25 @@ public class SpawnManager : MonoBehaviour
     {
         nextSpawnTime = Time.time + spawnDelay;
 
-        int freeSpace = Random.Range(0, 3);
-        for(int i = 0; i < spawnPoints.Length; i++)
+        int freeSpace = Random.Range(0, spawnPoints.Length);
+        int randMaterial = Random.Range(0, obstMaterials.Length);
+
+        for (int i = 0; i < spawnPoints.Length; i++)
         {
-            if(i == freeSpace) { 
+            int randPrefab = Random.Range(0, obstPrefab.Length);
+            int randRotation = Random.Range(-obstRotation, obstRotation);
+            
+            if (i == freeSpace) { 
                 SpawnScorePoint(i);
                 continue;
             }
-            int randPrefab = Random.Range(0, obstPrefab.Length);
-            int randRotation = Random.Range(-20, 20);
+            obstPrefab[randPrefab].GetComponent<MeshRenderer>().material = obstMaterials[randMaterial];
 
             Instantiate(obstPrefab[randPrefab], spawnPoints[i].transform.position, Quaternion.Euler(new Vector3(0, randRotation, 0)));
 
-            int randMaterial = Random.Range(0, obstMaterials.Length);
             
-            obstPrefab[randPrefab].GetComponent<MeshRenderer>().material = obstMaterials[randMaterial];
 
-
+            
         }
         
     }
