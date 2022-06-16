@@ -32,4 +32,4 @@
 
 	15.06.2022
 - added fog effect
-- added animations
+- added transition animations

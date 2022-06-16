@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public float delay = 1f;
     public Text score;
 
+    
+
     private void Start()
     {
         score.text = "0";
@@ -34,16 +36,9 @@ public class GameManager : MonoBehaviour
         gameoverMenuScore.text = score.text;
     } 
 
-    public void Restart()
-    {
-        SceneManager.LoadScene("Game01");
-        Time.timeScale = 1f;
-    }
+    
 
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
+    
 
     
 }
