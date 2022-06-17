@@ -33,7 +33,11 @@
 	15.06.2022
 - added fog effect
 - added transition animations
+
+	16.06.2022
 - added skybox
 - updated UI
 - changed player model
-- changed obstacle model
+- changed obstacle modelp
+- added decorations
+- changed main menu
