@@ -41,3 +41,6 @@
 - changed obstacle modelp
 - added decorations
 - changed main menu
+
+	17.06.2022
+- added postprocessing effects
